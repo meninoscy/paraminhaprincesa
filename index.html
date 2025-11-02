@@ -21,8 +21,8 @@
             --glass-bg: rgba(17, 17, 17, 0.8);
             --glass-border: #080bad;
             
-            /* Variável para o nome - MUDE AQUI! */
-            --girlfriend-name: "Kaikai"; /* ← COLOQUE O NOME AQUI */
+            
+            --girlfriend-name: "Kaikai"; /* ← sla */
         }
 
         * {
@@ -158,12 +158,12 @@
             50% { opacity: 1; transform: scale(1.05); }
         }
 
-        /* Nome da namorada */
+        /* nomezin */
         .girlfriend-name::before {
             content: var(--girlfriend-name);
         }
 
-        /* Card principal dark theme melhorado */
+        /* Card principal */
         .love-card {
             background: linear-gradient(135deg, 
                 rgba(17, 17, 17, 0.95) 0%, 
@@ -301,7 +301,7 @@
             50% { box-shadow: 0 15px 35px #3538f7, 0 0 20px var(--gold); }
         }
 
-        /* Galeria de fotos - 3 por linha mobile-first */
+        /* Galeria de fotos */
         .photo-gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -391,7 +391,7 @@
             transform: scale(1.02);
         }
 
-        /* Texto de fallback melhorado */
+        /* Texto de fallback */
         .photo-frame[data-fallback] {
             display: flex;
             flex-direction: column;
@@ -413,7 +413,7 @@
             opacity: 0.8;
         }
 
-        /* Mensagem especial dark theme */
+        /* Mensagem especial */
         .special-message {
             background: var(--glass-bg);
             backdrop-filter: blur(25px);
@@ -578,7 +578,7 @@
             to { opacity: 0; visibility: hidden; }
         }
 
-        /* Responsivo melhorado - Mobile First */
+        /* Responsivo */
         @media (max-width: 480px) {
             .header h1 { 
                 font-size: 2.8rem; 
